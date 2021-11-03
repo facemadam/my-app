@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/my-app/static/css/main.3d24fcb4.chunk.css",
+    "main.js": "/my-app/static/js/main.e72dac4b.chunk.js",
+    "main.js.map": "/my-app/static/js/main.e72dac4b.chunk.js.map",
+    "runtime-main.js": "/my-app/static/js/runtime-main.639cc512.js",
+    "runtime-main.js.map": "/my-app/static/js/runtime-main.639cc512.js.map",
+    "static/js/2.0e58ddc4.chunk.js": "/my-app/static/js/2.0e58ddc4.chunk.js",
+    "static/js/2.0e58ddc4.chunk.js.map": "/my-app/static/js/2.0e58ddc4.chunk.js.map",
+    "static/js/3.ff0311e9.chunk.js": "/my-app/static/js/3.ff0311e9.chunk.js",
+    "static/js/3.ff0311e9.chunk.js.map": "/my-app/static/js/3.ff0311e9.chunk.js.map",
+    "index.html": "/my-app/index.html",
+    "static/css/main.3d24fcb4.chunk.css.map": "/my-app/static/css/main.3d24fcb4.chunk.css.map",
+    "static/js/2.0e58ddc4.chunk.js.LICENSE.txt": "/my-app/static/js/2.0e58ddc4.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/my-app/static/media/NotoSansKR-Regular.457762ea.otf",
+    "static/media/avata.ef389d0d.png": "/my-app/static/media/avata.ef389d0d.png",
+    "static/media/bars.d6c9d97f.svg": "/my-app/static/media/bars.d6c9d97f.svg",
+    "static/media/ci.e39ed6e9.svg": "/my-app/static/media/ci.e39ed6e9.svg",
+    "static/media/css.d7e20af6.svg": "/my-app/static/media/css.d7e20af6.svg",
+    "static/media/diagram.31cfcfd1.svg": "/my-app/static/media/diagram.31cfcfd1.svg",
+    "static/media/email.17cadc9c.svg": "/my-app/static/media/email.17cadc9c.svg",
+    "static/media/facebook.aa3e687a.svg": "/my-app/static/media/facebook.aa3e687a.svg",
+    "static/media/git.13572fde.svg": "/my-app/static/media/git.13572fde.svg",
+    "static/media/github.a1117866.svg": "/my-app/static/media/github.a1117866.svg",
+    "static/media/html5.66139e61.svg": "/my-app/static/media/html5.66139e61.svg",
+    "static/media/instagram.b1080d95.svg": "/my-app/static/media/instagram.b1080d95.svg",
+    "static/media/js.0222eca9.svg": "/my-app/static/media/js.0222eca9.svg",
+    "static/media/mongo.77f4f26a.svg": "/my-app/static/media/mongo.77f4f26a.svg",
+    "static/media/mysql.0f1519df.svg": "/my-app/static/media/mysql.0f1519df.svg",
+    "static/media/php.12c08781.svg": "/my-app/static/media/php.12c08781.svg",
+    "static/media/portfolio.7e0a7e7d.png": "/my-app/static/media/portfolio.7e0a7e7d.png",
+    "static/media/react.3c16d41c.svg": "/my-app/static/media/react.3c16d41c.svg",
+    "static/media/times.f6c5825a.svg": "/my-app/static/media/times.f6c5825a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.639cc512.js",
+    "static/js/2.0e58ddc4.chunk.js",
+    "static/css/main.3d24fcb4.chunk.css",
+    "static/js/main.e72dac4b.chunk.js"
+  ]
+}
