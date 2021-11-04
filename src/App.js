@@ -38,20 +38,20 @@ function App() {
             </label>
           </div>
           <div className="Header__rnb__body">
-            <a href="#welcome" className="Header__navi-item active">
-              <small>Welcome</small>
+            <a href="#welcome" className="Header__rnb-item">
+              Welcome
             </a>
-            <a href="#about" className="Header__navi-item">
-              <small>About</small>
+            <a href="#about" className="Header__rnb-item">
+              About
             </a>
-            <a href="#skill" className="Header__navi-item">
-              <small>Skill</small>
+            <a href="#skill" className="Header__rnb-item">
+              Skill
             </a>
-            <a href="#project" className="Header__navi-item">
-              <small>Project</small>
+            <a href="#project" className="Header__rnb-item">
+              Project
             </a>
-            <a href="#contact" className="Header__navi-item">
-              <small>Contact</small>
+            <a href="#contact" className="Header__rnb-item">
+              Contact
             </a>
           </div>
         </div>
@@ -79,13 +79,17 @@ function App() {
           </div>
           <div className="Main__quick">
             <div className="Main__buttons">
-              <a href="https://facemadam.github.io/my-app/files/이력서_tngus6047.pdf" className="Main__buttons-item">
+              <a
+                href="https://facemadam.github.io/my-app/files/이력서_tngus6047.pdf"
+                target="_blank"
+                className="Main__buttons-item"
+              >
                 이력서
               </a>
             </div>
           </div>
         </div>
-        <div class="Divider">
+        <div class="Divider" id="about">
           <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path
               d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
@@ -93,7 +97,7 @@ function App() {
             ></path>
           </svg>
         </div>
-        <div className="Main__about" id="about">
+        <div className="Main__about">
           <h2>About</h2>
           <div className="Main__dev">
             <div className="Main__dev__box">
@@ -225,7 +229,11 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <a href="https://github.com/facemadam/my-app" className="Main__board__content-button">
+                <a
+                  href="https://github.com/facemadam/my-app"
+                  target="_blank"
+                  className="Main__board__content-button"
+                >
                   Detail
                 </a>
               </div>
@@ -261,13 +269,22 @@ function App() {
       <footer className="Footer">
         <div className="Footer__icons">
           <div className="Footer__icons">
-            <a href="https://github.com/facemadam" className="Footer__icons-item">
+            <a
+              href="https://github.com/facemadam"
+              className="Footer__icons-item"
+            >
               <img src={svg_github} alt="Github" />
             </a>
-            <a href="https://www.facebook.com/facemadam" className="Footer__icons-item">
+            <a
+              href="https://www.facebook.com/facemadam"
+              className="Footer__icons-item"
+            >
               <img src={svg_facebook} alt="Facebook" />
             </a>
-            <a href="https://www.instagram.com/suhyeon2005/" className="Footer__icons-item">
+            <a
+              href="https://www.instagram.com/suhyeon2005/"
+              className="Footer__icons-item"
+            >
               <img src={svg_instagram} alt="Instagram" />
             </a>
           </div>
