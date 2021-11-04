@@ -38,19 +38,19 @@ function App() {
             </label>
           </div>
           <div className="Header__rnb__body">
-            <a href="#" className="Header__navi-item active">
+            <a href="#welcome" className="Header__navi-item active">
               <small>Welcome</small>
             </a>
-            <a href="#" className="Header__navi-item">
+            <a href="#about" className="Header__navi-item">
               <small>About</small>
             </a>
-            <a href="#" className="Header__navi-item">
+            <a href="#skill" className="Header__navi-item">
               <small>Skill</small>
             </a>
-            <a href="#" className="Header__navi-item">
+            <a href="#project" className="Header__navi-item">
               <small>Project</small>
             </a>
-            <a href="#" className="Header__navi-item">
+            <a href="#contact" className="Header__navi-item">
               <small>Contact</small>
             </a>
           </div>
@@ -58,7 +58,7 @@ function App() {
         <div className="Header__overlay"></div>
       </header>
       <main className="Main">
-        <div className="Main__welcome">
+        <div className="Main__welcome" id="welcome">
           <div className="Main__info">
             <div className="Main_info-text">
               <h1>Welcome, ASHarea</h1>
@@ -79,7 +79,7 @@ function App() {
           </div>
           <div className="Main__quick">
             <div className="Main__buttons">
-              <a href="#" className="Main__buttons-item">
+              <a href="https://facemadam.github.io/my-app/files/이력서_tngus6047.pdf" className="Main__buttons-item">
                 이력서
               </a>
             </div>
@@ -93,7 +93,7 @@ function App() {
             ></path>
           </svg>
         </div>
-        <div className="Main__about">
+        <div className="Main__about" id="about">
           <h2>About</h2>
           <div className="Main__dev">
             <div className="Main__dev__box">
@@ -161,7 +161,7 @@ function App() {
             ></path>
           </svg>
         </div>
-        <div className="Main__skill">
+        <div className="Main__skill" id="skill">
           <h2>Skills</h2>
           <div className="Main__card">
             <div className="Main__skill__info">
@@ -200,7 +200,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="Main__project">
+        <div className="Main__project" id="project">
           <h2>Project</h2>
           <div className="Main__card">
             <div className="Main__board">
@@ -225,14 +225,14 @@ function App() {
                     </div>
                   </div>
                 </div>
-                <a href="/" className="Main__board__content-button">
+                <a href="https://github.com/facemadam/my-app" className="Main__board__content-button">
                   Detail
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div className="Main__contact">
+        <div className="Main__contact" id="contact">
           <h2>Contact</h2>
           <div className="Main__card">
             <div className="Main__board">
@@ -261,18 +261,18 @@ function App() {
       <footer className="Footer">
         <div className="Footer__icons">
           <div className="Footer__icons">
-            <a href="#" className="Footer__icons-item">
+            <a href="https://github.com/facemadam" className="Footer__icons-item">
               <img src={svg_github} alt="Github" />
             </a>
-            <a href="#" className="Footer__icons-item">
+            <a href="https://www.facebook.com/facemadam" className="Footer__icons-item">
               <img src={svg_facebook} alt="Facebook" />
             </a>
-            <a href="#" className="Footer__icons-item">
+            <a href="https://www.instagram.com/suhyeon2005/" className="Footer__icons-item">
               <img src={svg_instagram} alt="Instagram" />
             </a>
           </div>
         </div>
-        <div href="#" className="Footer__copyright">
+        <div className="Footer__copyright">
           <div>@ 2021 SuHyun An.</div>
           <div>
             <small>ALL RIGHTES RESERVED.</small>
