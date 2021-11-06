@@ -73,9 +73,10 @@ p {
   margin: 0;
 }
 
-.Header__gnb__bars img {
+.Header__gnb__bars svg {
   width: 25px;
   height: 25px;
+  fill: #6d599a;
 }
 
 .header__check:checked ~ .Header__rnb {
@@ -113,9 +114,10 @@ p {
   cursor: pointer;
 }
 
-.Header__rnb__bars img {
+.Header__rnb__bars svg {
   width: 25px;
   height: 25px;
+  fill: #fff;
 }
 
 .Header__rnb__body {
@@ -159,7 +161,7 @@ p {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 2em;
+
   color: var(--color-purple);
 }
 
@@ -168,7 +170,7 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  padding: var(--section-padding);
+  padding: 6em 2rem 3em;
 }
 
 .Main__info {
@@ -346,14 +348,14 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 100px;
-  max-width: 100px;
+  width: 80px;
+  max-width: 80px;
   margin: 1em 0;
 }
 
-.Main__skill__badges-item img {
-  width: 45px;
-  height: 45px;
+.Main__skill__badges-item svg {
+  height: 35px;
+  max-height: 35px;
 }
 
 .Main__project {
@@ -479,9 +481,10 @@ p {
   font-size: 0.75em;
 }
 
-.Footer__icons-item img {
+.Footer__icons-item svg {
   width: 30px;
   height: 30px;
+  fill: #7a65a6;
 }
 
 .Footer__copyright {
@@ -547,12 +550,14 @@ p {
     margin-right: auto;
   }
 
-  .Main__dev__box {
-    margin: 2em 0;
+  .Main__skill__badges-item {
+    width: 90px;
+    max-width: 90px;
   }
 
-  .Main__list {
-    max-width: 95%;
+  .Main__skill__badges-item svg {
+    height: 45px;
+    max-height: 45px;
   }
 
   .Main__board {
@@ -575,7 +580,7 @@ p {
     padding: 0.8em 1.6em;
   }
 
-  .Main__board__content-icon img {
+  .Main__board__content-icon svg {
     height: 14px;
     max-height: 14px;
   }
@@ -608,8 +613,8 @@ p {
   }
 
   .Main__welcome {
-    padding-top: 6em;
-    padding-bottom: 3em;
+    padding-top: 8em;
+    padding-bottom: 4em;
   }
 
   .Main__avata-wrap img {
@@ -623,6 +628,16 @@ p {
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .Main__skill__badges-item {
+    width: 110px;
+    max-width: 110px;
+  }
+
+  .Main__skill__badges-item svg {
+    height: 55px;
+    max-height: 55px;
   }
 
   .Main__board__preview {
