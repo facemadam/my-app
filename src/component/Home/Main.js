@@ -1,18 +1,27 @@
+import styled from "styled-components";
 import Welcome from "./Welcome";
 import About from "./About";
 import Skills from "./Skills";
 import Project from "./Project.js";
 import Contact from "./Contact.js";
 
+const Container = styled.main`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: var(--color-purple);
+`;
+
 function Main() {
   return (
-    <main className="Main">
+    <Container>
       <Welcome />
       <About />
       <Skills />
       <Project />
       <Contact />
-    </main>
+    </Container>
   );
 }
 
