@@ -103,44 +103,69 @@ const Overlay = styled.div`
 `;
 
 function Header() {
-  const [active, setActive] = useState(false);
-  const handleOnClick = () => {
-    setActive(!active);
+  const [isRnb, setIsRnb] = useState(false);
+  const [activeRnbItem, setActiveRnbItem] = useState(false);
+  const toggleRnb = () => {
+    setIsRnb(!isRnb);
+  };
+  const toggleRnbItem = (e) => {
+    setIsRnb(!isRnb);
+    setActiveRnbItem(e.target.getAttribute("href"));
   };
 
   return (
     <Container>
       <Gnb>
         <Logo>A.SHarea</Logo>
-        <Bars onClick={handleOnClick}>
+        <Bars onClick={toggleRnb}>
           <SvgBars />
         </Bars>
       </Gnb>
-      <Rnb className={active ? "active" : ""}>
+      <Rnb className={isRnb ? "active" : ""}>
         <RnbHead>
-          <Times onClick={handleOnClick}>
+          <Times onClick={toggleRnb}>
             <SvgTimes />
           </Times>
         </RnbHead>
         <RnbBody>
-          <RnbItem href="#welcome" onClick={handleOnClick}>
+          <RnbItem
+            href="#welcome"
+            onClick={toggleRnbItem}
+            className={activeRnbItem == "#welcome" ? "active" : ""}
+          >
             Welcome
           </RnbItem>
-          <RnbItem href="#about" onClick={handleOnClick}>
+          <RnbItem
+            href="#about"
+            onClick={toggleRnbItem}
+            className={activeRnbItem == "#about" ? "active" : ""}
+          >
             About
           </RnbItem>
-          <RnbItem href="#skill" onClick={handleOnClick}>
+          <RnbItem
+            href="#skill"
+            onClick={toggleRnbItem}
+            className={activeRnbItem == "#skill" ? "active" : ""}
+          >
             Skill
           </RnbItem>
-          <RnbItem href="#project" onClick={handleOnClick}>
+          <RnbItem
+            href="#project"
+            onClick={toggleRnbItem}
+            className={activeRnbItem == "#project" ? "active" : ""}
+          >
             Project
           </RnbItem>
-          <RnbItem href="#contact" onClick={handleOnClick}>
+          <RnbItem
+            href="#contact"
+            onClick={toggleRnbItem}
+            className={activeRnbItem == "#contact" ? "active" : ""}
+          >
             Contact
           </RnbItem>
         </RnbBody>
       </Rnb>
-      <Overlay className={active ? "active" : ""} />
+      <Overlay className={isRnb ? "active" : ""} />
     </Container>
   );
 }
