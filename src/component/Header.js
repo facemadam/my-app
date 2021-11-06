@@ -1,3 +1,4 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as SvgBars } from "../assets/svg/bars.svg";
 import { ReactComponent as SvgTimes } from "../assets/svg/times.svg";
@@ -24,15 +25,11 @@ const Gnb = styled.div`
   }
 `;
 
-const Logo = styled.a.attrs({
-  href: "/",
-})`
+const Logo = styled.a`
   font-weight: bold;
 `;
 
-const Bars = styled.label.attrs({
-  for: "rnb_toggle",
-})`
+const Bars = styled.label`
   cursor: pointer;
   > svg {
     width: 25px;
@@ -41,9 +38,7 @@ const Bars = styled.label.attrs({
   }
 `;
 
-const Times = styled.label.attrs({
-  for: "rnb_toggle",
-})`
+const Times = styled.label`
   cursor: pointer;
   > svg {
     width: 25px;
@@ -61,6 +56,9 @@ const Rnb = styled.div`
   background-color: var(--color-purple);
   transition: max-width 0.4s ease-out;
   z-index: 4;
+  &.active {
+    max-width: 100%;
+  }
 `;
 
 const RnbHead = styled.div`
@@ -99,46 +97,50 @@ const Overlay = styled.div`
   opacity: 0.5;
   transition: max-width 0.4s ease-out;
   z-index: 3;
-`;
-
-const Checkbox = styled.input.attrs({
-  type: "checkbox",
-  id: "rnb_toggle",
-})`
-  display: none;
-  &:checked ~ ${Rnb} {
-    max-width: 100%;
-  }
-  &:checked ~ ${Overlay} {
+  &.active {
     max-width: 100%;
   }
 `;
 
 function Header() {
+  const [active, setActive] = useState(false);
+  const handleOnClick = () => {
+    setActive(!active);
+  };
+
   return (
     <Container>
-      <Checkbox />
       <Gnb>
         <Logo>A.SHarea</Logo>
-        <Bars>
+        <Bars onClick={handleOnClick}>
           <SvgBars />
         </Bars>
       </Gnb>
-      <Rnb>
+      <Rnb className={active ? "active" : ""}>
         <RnbHead>
-          <Times>
+          <Times onClick={handleOnClick}>
             <SvgTimes />
           </Times>
         </RnbHead>
         <RnbBody>
-          <RnbItem href="#welcome">Welcome</RnbItem>
-          <RnbItem href="#about">About</RnbItem>
-          <RnbItem href="#skill">Skill</RnbItem>
-          <RnbItem href="#project">Project</RnbItem>
-          <RnbItem href="#contact">Contact</RnbItem>
+          <RnbItem href="#welcome" onClick={handleOnClick}>
+            Welcome
+          </RnbItem>
+          <RnbItem href="#about" onClick={handleOnClick}>
+            About
+          </RnbItem>
+          <RnbItem href="#skill" onClick={handleOnClick}>
+            Skill
+          </RnbItem>
+          <RnbItem href="#project" onClick={handleOnClick}>
+            Project
+          </RnbItem>
+          <RnbItem href="#contact" onClick={handleOnClick}>
+            Contact
+          </RnbItem>
         </RnbBody>
       </Rnb>
-      <Overlay />
+      <Overlay className={active ? "active" : ""} />
     </Container>
   );
 }

@@ -55,6 +55,7 @@ const BadgeItem = styled.div`
   max-width: 80px;
   margin: 1em 0;
   > svg {
+    max-width: 80px;
     height: 35px;
     max-height: 35px;
   }
@@ -62,6 +63,7 @@ const BadgeItem = styled.div`
     width: 90px;
     max-width: 90px;
     > svg {
+      max-width: 90px;
       height: 45px;
       max-height: 45px;
     }
@@ -70,6 +72,7 @@ const BadgeItem = styled.div`
     width: 110px;
     max-width: 110px;
     > svg {
+      max-width: 110px;
       height: 55px;
       max-height: 55px;
     }
