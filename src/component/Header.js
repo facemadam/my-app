@@ -104,13 +104,14 @@ const Overlay = styled.div`
 
 function Header() {
   const [isRnb, setIsRnb] = useState(false);
-  const [activeRnbItem, setActiveRnbItem] = useState(false);
+  const [isRnbItem, setIsRnbItem] = useState(false);
   const toggleRnb = () => {
     setIsRnb(!isRnb);
+    if (!isRnbItem) setIsRnbItem("#welcome");
   };
   const toggleRnbItem = (e) => {
     setIsRnb(!isRnb);
-    setActiveRnbItem(e.target.getAttribute("href"));
+    setIsRnbItem(e.target.getAttribute("href"));
   };
 
   return (
@@ -131,35 +132,35 @@ function Header() {
           <RnbItem
             href="#welcome"
             onClick={toggleRnbItem}
-            className={activeRnbItem == "#welcome" ? "active" : ""}
+            className={isRnbItem == "#welcome" ? "active" : ""}
           >
             Welcome
           </RnbItem>
           <RnbItem
             href="#about"
             onClick={toggleRnbItem}
-            className={activeRnbItem == "#about" ? "active" : ""}
+            className={isRnbItem == "#about" ? "active" : ""}
           >
             About
           </RnbItem>
           <RnbItem
             href="#skill"
             onClick={toggleRnbItem}
-            className={activeRnbItem == "#skill" ? "active" : ""}
+            className={isRnbItem == "#skill" ? "active" : ""}
           >
             Skill
           </RnbItem>
           <RnbItem
             href="#project"
             onClick={toggleRnbItem}
-            className={activeRnbItem == "#project" ? "active" : ""}
+            className={isRnbItem == "#project" ? "active" : ""}
           >
             Project
           </RnbItem>
           <RnbItem
             href="#contact"
             onClick={toggleRnbItem}
-            className={activeRnbItem == "#contact" ? "active" : ""}
+            className={isRnbItem == "#contact" ? "active" : ""}
           >
             Contact
           </RnbItem>
