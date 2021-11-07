@@ -8,7 +8,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   padding: var(--section-padding);
-  background-color: var(--color-white-bright1);
+  background-color: var(--color-background-section);
 `;
 
 const Title = styled.h2``;
@@ -21,7 +21,7 @@ const Box = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
-  background-color: var(--color-white);
+  background-color: var(--color-background-item);
   border-radius: 1rem;
   box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
   @media (min-width: 769px) {
@@ -118,8 +118,8 @@ const BoxItemBodyButton = styled.a.attrs({
   position: relative;
   margin-top: 1.5em;
   padding: 0.8em 3.6em;
-  background-color: var(--color-yellow-bright3);
-  color: var(--color-yellow);
+  background-color: #fef0ca;
+  color: #fcbf1b;
   border-radius: 0.5em;
   font-size: 0.8em;
   transition: all 0.5s;
@@ -132,7 +132,7 @@ const BoxItemBodyButton = styled.a.attrs({
     width: 0%;
     height: 100%;
     transition: all 0.5s;
-    background: var(--color-sky);
+    background: var(--color-background-button-active);
     border-radius: 0.5em;
     z-index: -1;
   }

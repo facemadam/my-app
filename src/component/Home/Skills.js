@@ -15,7 +15,7 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   padding: var(--section-padding);
-  background-color: var(--color-white-bright1);
+  background-color: var(--color-background-section);
 `;
 
 const Title = styled.h2``;
@@ -28,7 +28,7 @@ const Box = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding: 2em;
-  background-color: var(--color-white);
+  background-color: var(--color-background-item);
   border-radius: 1rem;
   box-shadow: 0 5px 10px rgb(0 0 0 / 5%);
   @media (min-width: 769px) {

@@ -10,7 +10,8 @@ const Container = styled.main`
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  color: var(--color-purple);
+  color: var(--color-font);
+  background-color: var(--color-background);
 `;
 
 function Main() {

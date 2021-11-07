@@ -9,8 +9,8 @@ const Container = styled.footer`
   align-items: center;
   justify-content: center;
   padding: var(--section-padding);
-  color: var(--color-purple);
-  background-color: var(--color-white-bright1);
+  color: var(--color-font);
+  background-color: var(--color-background-section);
 `;
 
 const Icons = styled.div`
@@ -30,10 +30,11 @@ const IconItem = styled.a`
   > svg {
     width: 30px;
     height: 30px;
-    fill: var(--color-purple-bright1);
+    fill: var(--color-font);
+    opacity: 0.8;
   }
   > svg:hover {
-    fill: var(--color-purple);
+    opacity: 1;
   }
 `;
 
@@ -46,8 +47,9 @@ const Copyright = styled.div`
 
 const CopyrightItem = styled.p`
   margin: 0;
-  color: var(--color-purple-bright3);
+  color: var(--color-font);
   font-size: 0.75em;
+  opacity: 0.5;
 `;
 
 function Footer() {

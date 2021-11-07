@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import ImgAvata from "../../assets/images/avata.png";
 
-const Container = styled.div.attrs({
-  id: "welcome",
-})`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,10 +41,12 @@ const InfoText = styled.div`
 const InfoTextTop = styled.h1``;
 
 const InfoTextMiddle = styled.h4`
-  color: var(--color-purple-bright3);
+  color: var(--color-font);
+  opacity: 0.4;
 `;
 const InfoTextBottom = styled.h5`
-  color: var(--color-purple-bright1);
+  color: var(--color-font);
+  opacity: 0.8;
 `;
 
 const InfoAvata = styled.div`
@@ -57,6 +57,8 @@ const InfoAvata = styled.div`
 `;
 
 const InfoAvataWrap = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 1em 0;
 `;
 
@@ -91,18 +93,17 @@ const SubButtons = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 `;
 
-const SubButtonsItem = styled.a.attrs({
-  target: "_blank",
-})`
+const SubButtonsItem = styled.a`
   position: relative;
   display: flex;
   align-items: center;
   margin: 0.5em 0;
   padding: 0.8em 1.6em;
-  background-color: var(--color-purple-bright4);
-  color: var(--color-purple-bright1);
+  background-color: var(--color-background-button);
+  color: var(--color-font-button);
   border-radius: 0.5em;
   font-size: 0.8em;
   transition: all 0.5s;
@@ -115,7 +116,7 @@ const SubButtonsItem = styled.a.attrs({
     width: 0%;
     height: 100%;
     transition: all 0.5s;
-    background: var(--color-sky);
+    background: var(--color-background-button-active);
     border-radius: 0.5em;
     z-index: -1;
   }
@@ -127,7 +128,7 @@ const SubButtonsItem = styled.a.attrs({
 
 function Welcome() {
   return (
-    <Container>
+    <Container id="welcome">
       <Info>
         <InfoText>
           <InfoTextTop>Welcome, ASHarea</InfoTextTop>
@@ -144,7 +145,10 @@ function Welcome() {
       </Info>
       <Sub>
         <SubButtons>
-          <SubButtonsItem href="https://facemadam.github.io/my-app/files/이력서_tngus6047.pdf">
+          <SubButtonsItem
+            href="https://facemadam.github.io/my-app/files/이력서_tngus6047.pdf"
+            target="_blank"
+          >
             이력서
           </SubButtonsItem>
         </SubButtons>

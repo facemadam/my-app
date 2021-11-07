@@ -5,19 +5,20 @@ const Container = styled.div`
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  background-color: var(--color-background);
 
   ${(props) =>
     !props.id &&
     `
   transform: rotate(180deg);
-  background-color: var(--color-white-bright1);
+  background-color: var(--color-background-section);
   `}
   > svg {
     position: relative;
     display: block;
     width: calc(150% + 1.3px);
     height: 95px;
-    fill: var(--color-purple);
+    fill: var(--color-font);
   }
   @media (min-width: 769px) {
     > svg {

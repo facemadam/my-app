@@ -1,13 +1,14 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Theme from "./Home/Theme";
 import { ReactComponent as SvgBars } from "../assets/svg/bars.svg";
 import { ReactComponent as SvgTimes } from "../assets/svg/times.svg";
 
 const Container = styled.header`
   position: fixed;
   width: 100%;
-  color: var(--color-purple);
-  background-color: var(--color-white);
+  color: var(--color-font);
+  background-color: var(--color-background);
   z-index: 2;
 `;
 
@@ -29,12 +30,13 @@ const Logo = styled.a`
   font-weight: bold;
 `;
 
-const Bars = styled.label`
-  cursor: pointer;
+const Bars = styled.div`
+  display: flex;
   > svg {
     width: 25px;
     height: 25px;
-    fill: #6d599a;
+    fill: var(--color-font);
+    cursor: pointer;
   }
 `;
 
@@ -43,7 +45,7 @@ const Times = styled.label`
   > svg {
     width: 25px;
     height: 25px;
-    fill: #fff;
+    fill: var(--color-background);
   }
 `;
 
@@ -53,7 +55,7 @@ const Rnb = styled.div`
   right: 0;
   bottom: 0;
   max-width: 0;
-  background-color: var(--color-purple);
+  background-color: var(--color-font);
   transition: max-width 0.4s ease-out;
   z-index: 4;
   &.active {
@@ -76,12 +78,13 @@ const RnbItem = styled.a`
   position: relative;
   margin: 0.5em 0;
   text-align: left;
-  color: #947eb4;
+  color: var(--color-background);
   font-size: 1.75em;
   font-weight: bold;
+  opacity: 0.4;
   &.active,
   &:hover {
-    color: var(--color-white);
+    opacity: 1;
     transition: all 0.4s;
   }
 `;
@@ -118,14 +121,15 @@ function Header() {
     <Container>
       <Gnb>
         <Logo>A.SHarea</Logo>
-        <Bars onClick={toggleRnb}>
-          <SvgBars />
+        <Bars>
+          <Theme />
+          <SvgBars onClick={toggleRnb} />
         </Bars>
       </Gnb>
       <Rnb className={isRnb ? "active" : ""}>
         <RnbHead>
-          <Times onClick={toggleRnb}>
-            <SvgTimes />
+          <Times>
+            <SvgTimes onClick={toggleRnb} />
           </Times>
         </RnbHead>
         <RnbBody>

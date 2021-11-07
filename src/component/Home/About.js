@@ -7,8 +7,8 @@ const Container = styled.div`
   align-items: center;
   width: 100%;
   padding-bottom: 3em;
-  color: var(--color-white);
-  background-color: var(--color-purple);
+  color: var(--color-background);
+  background-color: var(--color-font);
 `;
 
 const Title = styled.h2``;
@@ -33,9 +33,9 @@ const InfoBox = styled.div`
   margin: 1em 2rem;
   padding: 1.5em;
   border-radius: 1rem;
-  color: var(--color-white-bright2);
-  background-color: var(--color-black);
-  @media (min-width: 769px) {
+  color: #a9b7c6;
+  background-color: #282b2e;
+  @media (min-width: 1024px) {
     margin: 1em 0;
   }
 `;

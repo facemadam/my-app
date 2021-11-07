@@ -1,24 +1,13 @@
 :root {
-  --color-white: #fefefe;
-  --color-white-bright1: #fafaff;
-  --color-white-bright2: #a9b7c6;
-  --color-black: #282b2e;
-  --color-purple: #6d599a;
-  --color-purple-bright1: #876eab;
-  --color-purple-bright2: #b2a6cc;
-  --color-purple-bright3: #bcaed0;
-  --color-purple-bright4: #f1eef5;
-  --color-yellow: #fcbf1b;
-  --color-yellow-bright1: #ffc66d;
-  --color-yellow-bright2: #ffe298;
-  --color-yellow-bright3: #fef0ca;
-  --color-orange: #cc7832;
-  --color-green: #6a8759;
-  --color-blue: #6897bb;
-  --color-sky: #daf9ff;
-  --color-red: #ff888a;
-  --color-red-bright1: #ffeeee;
   --section-padding: 4em 2rem 2em;
+  --color-font: #6d599a;
+  --color-font-button: #9686b9;
+  --color-background: #fefefe;
+  --color-background-section: #fafaff;
+  --color-background-item: #fefefe;
+  --color-background-toggle: #c8bdd8;
+  --color-background-button: #f1eef5;
+  --color-background-button-active: #daf9ff;
 }
 
 @font-face {
@@ -39,6 +28,16 @@ body {
   font-family: "NotoSansKR-Regular";
   font-size: 1em;
   min-width: 320px;
+}
+
+body.dark {
+  --color-font: #e3e3e3;
+  --color-font-button: #8b8b8b;
+  --color-background: #282b2e;
+  --color-background-section: #414348;
+  --color-background-item: #282b2e;
+  --color-background-toggle: #e3e3e3;
+  --color-background-button: #f6f6f6;
 }
 
 a {
