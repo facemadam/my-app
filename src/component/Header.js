@@ -98,7 +98,6 @@ const Overlay = styled.div`
   max-width: 0;
   background-color: #dbdbdb;
   opacity: 0.5;
-  transition: max-width 0.4s ease-out;
   z-index: 3;
   &.active {
     max-width: 100%;
