@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as SvgGithub } from "../assets/svg/github.svg";
-import { ReactComponent as SvgFacebook } from "../assets/svg/facebook.svg";
-import { ReactComponent as SvgInstagram } from "../assets/svg/instagram.svg";
+import { ReactComponent as SvgGithub } from "../../assets/svg/github.svg";
+import { ReactComponent as SvgFacebook } from "../../assets/svg/facebook.svg";
+import { ReactComponent as SvgInstagram } from "../../assets/svg/instagram.svg";
 
 const Container = styled.footer`
   display: flex;

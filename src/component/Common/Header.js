@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styled from "styled-components";
-import Theme from "./Home/Theme";
-import { ReactComponent as SvgBars } from "../assets/svg/bars.svg";
-import { ReactComponent as SvgTimes } from "../assets/svg/times.svg";
+import Toggle from "./Toggle";
+import { ReactComponent as SvgBars } from "../../assets/svg/bars.svg";
+import { ReactComponent as SvgTimes } from "../../assets/svg/times.svg";
 
 const Container = styled.header`
   position: fixed;
@@ -121,7 +121,7 @@ function Header() {
       <Gnb>
         <Logo>A.SHarea</Logo>
         <Bars>
-          <Theme />
+          <Toggle />
           <SvgBars onClick={toggleRnb} />
         </Bars>
       </Gnb>
