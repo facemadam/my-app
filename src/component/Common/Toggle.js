@@ -40,7 +40,7 @@ const Circle = styled.div`
   }
 `;
 
-function Theme() {
+function Toggle() {
   const [mode, setMode] = useState(true);
   const ModeToggle = (e) => {
     setMode(!mode);
@@ -67,4 +67,4 @@ function Theme() {
   );
 }
 
-export default Theme;
+export default Toggle;
