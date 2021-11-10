@@ -25,7 +25,7 @@ const IconItem = styled.a`
   align-items: center;
   min-width: 50px;
   max-width: 50px;
-  color: var(--color-purple);
+  color: var(--color-font);
   font-size: 0.75em;
   > svg {
     width: 30px;

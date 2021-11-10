@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import Overlay from "./Overlay";
 import Toggle from "./Toggle";
 import { ReactComponent as SvgBars } from "../../assets/svg/bars.svg";
 import { ReactComponent as SvgTimes } from "../../assets/svg/times.svg";
@@ -86,21 +87,6 @@ const RnbItem = styled.a`
   &:hover {
     opacity: 1;
     transition: all 0.4s;
-  }
-`;
-
-const Overlay = styled.div`
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  max-width: 0;
-  background-color: #dbdbdb;
-  opacity: 0.5;
-  z-index: 3;
-  &.active {
-    max-width: 100%;
   }
 `;
 

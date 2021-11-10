@@ -35,6 +35,10 @@ const BoxItem = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0;
+  &:not(:nth-child(1)) {
+    margin-top: 1em;
+  }
   @media (min-width: 769px) {
     flex-direction: row;
   }
@@ -58,13 +62,12 @@ const BoxItemHead = styled.div`
 const BoxItemBody = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  margin-top: 1em;
+  margin: 0;
   @media (min-width: 769px) {
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
   }
 `;
 
@@ -95,6 +98,10 @@ const BoxItemBodyText = styled.div`
   display: inline-flex;
   flex-direction: column;
   overflow: hidden;
+  @media (min-width: 769px) {
+    flex-direction: row;
+    align-items: center;
+  }
 `;
 
 const BoxItemBodyTextTop = styled.p`
@@ -102,7 +109,7 @@ const BoxItemBodyTextTop = styled.p`
   text-overflow: ellipsis;
   white-space: nowrap;
   font-weight: bold;
-  margin: 0;
+  margin-right: 0.5em;
 `;
 
 const BoxItemBodyTextBottom = styled.small`
@@ -163,7 +170,6 @@ function Contact() {
                 </BoxItemBodyTextBottom>
               </BoxItemBodyText>
             </BoxItemBodyContent>
-            <BoxItemBodyButton>Send</BoxItemBodyButton>
           </BoxItemBody>
         </BoxItem>
       </Box>

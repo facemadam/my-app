@@ -1,3 +1,5 @@
+import { useState } from "react";
+import Modal from "../Common/Modal";
 import styled from "styled-components";
 import ImgPortfolio from "../../assets/images/portfolio.png";
 import { ReactComponent as SvgDiagram } from "../../assets/svg/diagram.svg";
@@ -112,17 +114,16 @@ const BoxItemBodyTextBottom = styled.small`
   white-space: nowrap;
 `;
 
-const BoxItemBodyButton = styled.a.attrs({
-  target: "_blank",
-})`
+const BoxItemBodyButton = styled.a`
   position: relative;
   margin-top: 1.5em;
   padding: 0.8em 3.6em;
-  background-color: #fef0ca;
-  color: #fcbf1b;
+  background-color: var(--color-background-button);
+  color: var(--color-font-button);
   border-radius: 0.5em;
   font-size: 0.8em;
   transition: all 0.5s;
+  cursor: pointer;
   z-index: 1;
   &:after {
     content: "";
@@ -146,7 +147,44 @@ const BoxItemBodyButton = styled.a.attrs({
   }
 `;
 
+const ModalBoxItemHead = styled(BoxItemHead)`
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  > img {
+    min-width: 320px;
+    max-height: 768px;
+  }
+`;
+
+const ModalBoxItemBodyText = styled(BoxItemBodyText)`
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+`;
+
+const ModalBoxItemBodyTextTop = styled(BoxItemBodyTextTop)`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-top: 1.5em;
+`;
+
+const ModalBoxItemBodyTextBottom = styled(BoxItemBodyTextBottom)`
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 0.8em;
+`;
+
 function Project() {
+  const [modal, setModal] = useState(false);
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <Container id="project">
       <Title>Project</Title>
@@ -167,12 +205,30 @@ function Project() {
                 </BoxItemBodyTextBottom>
               </BoxItemBodyText>
             </BoxItemBodyContent>
-            <BoxItemBodyButton href="https://github.com/facemadam/my-app">
-              Source
-            </BoxItemBodyButton>
+            <BoxItemBodyButton onClick={toggleModal}>Detail</BoxItemBodyButton>
           </BoxItemBody>
         </BoxItem>
       </Box>
+      <Modal show={modal} close={toggleModal}>
+        <ModalBoxItemHead>
+          <img src={ImgPortfolio} alt="Portfolio" />
+        </ModalBoxItemHead>
+        <ModalBoxItemBodyText>
+          <ModalBoxItemBodyTextTop>포트폴리오</ModalBoxItemBodyTextTop>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> React 기반 반응형 웹사이트
+          </ModalBoxItemBodyTextBottom>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> React 컴포넌트 디자인 구성
+          </ModalBoxItemBodyTextBottom>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> Styled-Component 활용 CSS-in-JS 구성
+          </ModalBoxItemBodyTextBottom>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> React Portals 활용 Modal 구현
+          </ModalBoxItemBodyTextBottom>
+        </ModalBoxItemBodyText>
+      </Modal>
     </Container>
   );
 }

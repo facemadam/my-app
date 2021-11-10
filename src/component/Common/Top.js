@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { ReactComponent as SvgTop } from "../../assets/svg/top.svg";
 
@@ -18,11 +18,11 @@ const Container = styled.div`
   > svg {
     width: 2.2rem;
     height: 2.2rem;
-    fill: var(--color-font);
-    opacity: 0.8;
+    fill: var(--color-font-button);
+    transition: all 0.3s;
   }
   &:hover > svg {
-    opacity: 1;
+    transform: scale(1.1);
   }
 }`;
 
