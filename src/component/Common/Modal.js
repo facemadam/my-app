@@ -33,6 +33,7 @@ const Container = styled.div`
 const ModalBox = styled.div`
   display: flex;
   flex-direction: column;
+  position: relative;
   min-width: 320px;
   max-width: 968px;
   height: auto;
