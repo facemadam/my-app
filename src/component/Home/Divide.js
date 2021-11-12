@@ -5,20 +5,23 @@ const Container = styled.div`
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  background-color: var(--color-background);
-
-  ${(props) =>
-    !props.id &&
-    `
-  transform: rotate(180deg);
-  background-color: var(--color-background-section);
-  `}
+  margin-top: -1px;
+  &.rotate {
+    margin-top: 0;
+    margin-bottom: -1px;
+    transform: rotate(180deg);
+    > svg > path {
+      fill: var(--color-background-section);
+    }
+  }
   > svg {
     position: relative;
     display: block;
     width: calc(150% + 1.3px);
-    height: 95px;
-    fill: var(--color-font);
+    height: 120px;
+    > path {
+      fill: var(--color-background);
+    }
   }
   @media (min-width: 769px) {
     > svg {
@@ -32,9 +35,9 @@ const Container = styled.div`
   }
 `;
 
-function Divide(props) {
+function Divide({ className }) {
   return (
-    <Container id={props.id ? props.id : ""}>
+    <Container className={className}>
       <SvgDivider />
     </Container>
   );

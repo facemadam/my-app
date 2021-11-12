@@ -5,8 +5,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 100%;
-  padding-bottom: 3em;
   color: var(--color-background);
   background-color: var(--color-font);
 `;
@@ -50,9 +50,8 @@ const InfoBoxItemInner = styled.div`
 
 function About() {
   return (
-    <>
-      <Divide id="about" />
-      <Container>
+      <Container id="about">
+        <Divide />
         <Title>About</Title>
         <Info>
           <InfoBox>
@@ -111,9 +110,8 @@ function About() {
             <div>{"}"}</div>
           </InfoBox>
         </Info>
+        <Divide className="rotate" />
       </Container>
-      <Divide />
-    </>
   );
 }
 
