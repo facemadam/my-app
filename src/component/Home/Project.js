@@ -216,16 +216,19 @@ function Project() {
         <ModalBoxItemBodyText>
           <ModalBoxItemBodyTextTop>포트폴리오</ModalBoxItemBodyTextTop>
           <ModalBoxItemBodyTextBottom>
-            <font color="#fccf56">#</font> React 기반 반응형 웹사이트
+            <font color="#fccf56">#</font> Responsive Web
           </ModalBoxItemBodyTextBottom>
           <ModalBoxItemBodyTextBottom>
-            <font color="#fccf56">#</font> React 컴포넌트 디자인 구성
+            <font color="#fccf56">#</font> React JS Component
           </ModalBoxItemBodyTextBottom>
           <ModalBoxItemBodyTextBottom>
-            <font color="#fccf56">#</font> Styled-Component 활용 CSS-in-JS 구성
+            <font color="#fccf56">#</font> Styled-Component CSS-in-JS
           </ModalBoxItemBodyTextBottom>
           <ModalBoxItemBodyTextBottom>
-            <font color="#fccf56">#</font> React Portals 활용 Modal 구현
+            <font color="#fccf56">#</font> React Portals Modal
+          </ModalBoxItemBodyTextBottom>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> Dark Mode Toggle
           </ModalBoxItemBodyTextBottom>
         </ModalBoxItemBodyText>
       </Modal>

@@ -25,12 +25,13 @@ const Container = styled.div`
   }
   @media (min-width: 769px) {
     > svg {
-      height: 140px;
+      height: 150px;
     }
   }
   @media (min-width: 1024px) {
     > svg {
-      height: 190px;
+      width: calc(150% + 1.3px);
+      height: 250px;
     }
   }
 `;

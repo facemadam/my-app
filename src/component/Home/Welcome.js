@@ -145,12 +145,7 @@ function Welcome() {
       </Info>
       <Sub>
         <SubButtons>
-          <SubButtonsItem
-            href="https://facemadam.github.io/my-app/files/이력서_tngus6047.pdf"
-            target="_blank"
-          >
-            이력서
-          </SubButtonsItem>
+          <SubButtonsItem href="#project">My Project</SubButtonsItem>
         </SubButtons>
       </Sub>
     </Container>
