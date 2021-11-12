@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "../Common/Modal";
 import styled from "styled-components";
-import ImgPortfolio from "../../assets/images/portfolio.png";
+import ImgPortfolioLight from "../../assets/images/portfolio_light.png";
 import { ReactComponent as SvgDiagram } from "../../assets/svg/diagram.svg";
 
 const Container = styled.div`
@@ -191,7 +191,7 @@ function Project() {
       <Box>
         <BoxItem>
           <BoxItemHead>
-            <img src={ImgPortfolio} alt="Portfolio" />
+            <img src={ImgPortfolioLight} alt="Portfolio" />
           </BoxItemHead>
           <BoxItemBody>
             <BoxItemBodyContent>
@@ -211,7 +211,7 @@ function Project() {
       </Box>
       <Modal show={modal} close={toggleModal}>
         <ModalBoxItemHead>
-          <img src={ImgPortfolio} alt="Portfolio" />
+          <img src={ImgPortfolioLight} alt="Portfolio_Light" />
         </ModalBoxItemHead>
         <ModalBoxItemBodyText>
           <ModalBoxItemBodyTextTop>포트폴리오</ModalBoxItemBodyTextTop>
