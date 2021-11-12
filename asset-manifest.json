@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.44831a80.chunk.css",
-    "main.js": "/my-app/static/js/main.5b1a09ce.chunk.js",
-    "main.js.map": "/my-app/static/js/main.5b1a09ce.chunk.js.map",
+    "main.js": "/my-app/static/js/main.618b05c2.chunk.js",
+    "main.js.map": "/my-app/static/js/main.618b05c2.chunk.js.map",
     "runtime-main.js": "/my-app/static/js/runtime-main.33dc232e.js",
     "runtime-main.js.map": "/my-app/static/js/runtime-main.33dc232e.js.map",
     "static/js/2.64cb8efa.chunk.js": "/my-app/static/js/2.64cb8efa.chunk.js",
@@ -18,7 +18,7 @@
     "static/media/ci.77124c32.svg": "/my-app/static/media/ci.77124c32.svg",
     "static/media/css.e18fb8fc.svg": "/my-app/static/media/css.e18fb8fc.svg",
     "static/media/diagram.b751d776.svg": "/my-app/static/media/diagram.b751d776.svg",
-    "static/media/divider.ddda5181.svg": "/my-app/static/media/divider.ddda5181.svg",
+    "static/media/divider.5e286294.svg": "/my-app/static/media/divider.5e286294.svg",
     "static/media/email.d8870950.svg": "/my-app/static/media/email.d8870950.svg",
     "static/media/facebook.2783053f.svg": "/my-app/static/media/facebook.2783053f.svg",
     "static/media/git.60c02b0c.svg": "/my-app/static/media/git.60c02b0c.svg",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.33dc232e.js",
     "static/js/2.64cb8efa.chunk.js",
     "static/css/main.44831a80.chunk.css",
-    "static/js/main.5b1a09ce.chunk.js"
+    "static/js/main.618b05c2.chunk.js"
   ]
 }
