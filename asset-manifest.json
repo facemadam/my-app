@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.6776b97b.chunk.css",
-    "main.js": "/my-app/static/js/main.ac589cd8.chunk.js",
-    "main.js.map": "/my-app/static/js/main.ac589cd8.chunk.js.map",
+    "main.js": "/my-app/static/js/main.3316cbda.chunk.js",
+    "main.js.map": "/my-app/static/js/main.3316cbda.chunk.js.map",
     "runtime-main.js": "/my-app/static/js/runtime-main.33dc232e.js",
     "runtime-main.js.map": "/my-app/static/js/runtime-main.33dc232e.js.map",
     "static/js/2.64cb8efa.chunk.js": "/my-app/static/js/2.64cb8efa.chunk.js",
@@ -30,7 +30,7 @@
     "static/media/moon.a0fb58a8.svg": "/my-app/static/media/moon.a0fb58a8.svg",
     "static/media/mysql.4c509260.svg": "/my-app/static/media/mysql.4c509260.svg",
     "static/media/php.f3a81dbc.svg": "/my-app/static/media/php.f3a81dbc.svg",
-    "static/media/portfolio.7e0a7e7d.png": "/my-app/static/media/portfolio.7e0a7e7d.png",
+    "static/media/portfolio_light.8615e6c6.png": "/my-app/static/media/portfolio_light.8615e6c6.png",
     "static/media/react.3c16d41c.svg": "/my-app/static/media/react.3c16d41c.svg",
     "static/media/sun.4163d353.svg": "/my-app/static/media/sun.4163d353.svg",
     "static/media/times.0e7d89a0.svg": "/my-app/static/media/times.0e7d89a0.svg",
@@ -40,6 +40,6 @@
     "static/js/runtime-main.33dc232e.js",
     "static/js/2.64cb8efa.chunk.js",
     "static/css/main.6776b97b.chunk.css",
-    "static/js/main.ac589cd8.chunk.js"
+    "static/js/main.3316cbda.chunk.js"
   ]
 }
