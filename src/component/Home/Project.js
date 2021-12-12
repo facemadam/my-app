@@ -2,6 +2,7 @@ import { useState } from "react";
 import Modal from "../Common/Modal";
 import styled from "styled-components";
 import ImgPortfolioLight from "../../assets/images/portfolio_light.png";
+import ImgNetflixUi from "../../assets/images/netflix-ui.png";
 import { ReactComponent as SvgDiagram } from "../../assets/svg/diagram.svg";
 
 const Container = styled.div`
@@ -52,6 +53,8 @@ const BoxItemHead = styled.div`
   @media (min-width: 769px) {
     align-items: flex-start;
     margin-right: 1em;
+    width: 445px;
+    max-width: 445px;
   }
   @media (min-width: 1024px) {
     margin-right: 2em;
@@ -151,6 +154,8 @@ const ModalBoxItemHead = styled(BoxItemHead)`
   display: flex;
   justify-content: center;
   margin: 0;
+  width: auto;
+  max-width: unset;
   > img {
     min-width: 320px;
     max-height: 768px;
@@ -180,9 +185,14 @@ const ModalBoxItemBodyTextBottom = styled(BoxItemBodyTextBottom)`
 `;
 
 function Project() {
-  const [modal, setModal] = useState(false);
-  const toggleModal = () => {
-    setModal(!modal);
+  const [modal1, setModal1] = useState(false);
+  const toggleModal1 = () => {
+    setModal1(!modal1);
+  };
+
+  const [modal2, setModal2] = useState(false);
+  const toggleModal2 = () => {
+    setModal2(!modal2);
   };
 
   return (
@@ -205,11 +215,11 @@ function Project() {
                 </BoxItemBodyTextBottom>
               </BoxItemBodyText>
             </BoxItemBodyContent>
-            <BoxItemBodyButton onClick={toggleModal}>Detail</BoxItemBodyButton>
+            <BoxItemBodyButton onClick={toggleModal1}>Detail</BoxItemBodyButton>
           </BoxItemBody>
         </BoxItem>
       </Box>
-      <Modal show={modal} close={toggleModal}>
+      <Modal show={modal1} close={toggleModal1}>
         <ModalBoxItemHead>
           <img src={ImgPortfolioLight} alt="Portfolio_Light" />
         </ModalBoxItemHead>
@@ -229,6 +239,44 @@ function Project() {
           </ModalBoxItemBodyTextBottom>
           <ModalBoxItemBodyTextBottom>
             <font color="#fccf56">#</font> Dark Mode Toggle
+          </ModalBoxItemBodyTextBottom>
+        </ModalBoxItemBodyText>
+      </Modal>
+      <Box>
+        <BoxItem>
+          <BoxItemHead>
+            <img src={ImgNetflixUi} alt="Netflix-UI" />
+          </BoxItemHead>
+          <BoxItemBody>
+            <BoxItemBodyContent>
+              <BoxItemBodyIcon>
+                <SvgDiagram />
+              </BoxItemBodyIcon>
+              <BoxItemBodyText>
+                <BoxItemBodyTextTop>넷플릭스 UI</BoxItemBodyTextTop>
+                <BoxItemBodyTextBottom>
+                  React.js 기반 넷플릭스 UI 클론
+                </BoxItemBodyTextBottom>
+              </BoxItemBodyText>
+            </BoxItemBodyContent>
+            <BoxItemBodyButton onClick={toggleModal2}>Detail</BoxItemBodyButton>
+          </BoxItemBody>
+        </BoxItem>
+      </Box>
+      <Modal show={modal2} close={toggleModal2}>
+        <ModalBoxItemHead>
+          <img src={ImgNetflixUi} alt="Portfolio_Light" />
+        </ModalBoxItemHead>
+        <ModalBoxItemBodyText>
+          <ModalBoxItemBodyTextTop>넷플릭스 UI</ModalBoxItemBodyTextTop>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> React JS Component
+          </ModalBoxItemBodyTextBottom>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> tailwindcss, emotion, twin.macro
+          </ModalBoxItemBodyTextBottom>
+          <ModalBoxItemBodyTextBottom>
+            <font color="#fccf56">#</font> axios, TMDB API
           </ModalBoxItemBodyTextBottom>
         </ModalBoxItemBodyText>
       </Modal>
