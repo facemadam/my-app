@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/my-app/static/css/main.6776b97b.chunk.css",
-    "main.js": "/my-app/static/js/main.3316cbda.chunk.js",
-    "main.js.map": "/my-app/static/js/main.3316cbda.chunk.js.map",
+    "main.js": "/my-app/static/js/main.f3bd952e.chunk.js",
+    "main.js.map": "/my-app/static/js/main.f3bd952e.chunk.js.map",
     "runtime-main.js": "/my-app/static/js/runtime-main.33dc232e.js",
     "runtime-main.js.map": "/my-app/static/js/runtime-main.33dc232e.js.map",
     "static/js/2.64cb8efa.chunk.js": "/my-app/static/js/2.64cb8efa.chunk.js",
@@ -29,6 +29,7 @@
     "static/media/mongo.0781b723.svg": "/my-app/static/media/mongo.0781b723.svg",
     "static/media/moon.a0fb58a8.svg": "/my-app/static/media/moon.a0fb58a8.svg",
     "static/media/mysql.4c509260.svg": "/my-app/static/media/mysql.4c509260.svg",
+    "static/media/netflix-ui.21228474.png": "/my-app/static/media/netflix-ui.21228474.png",
     "static/media/php.f3a81dbc.svg": "/my-app/static/media/php.f3a81dbc.svg",
     "static/media/portfolio_light.8615e6c6.png": "/my-app/static/media/portfolio_light.8615e6c6.png",
     "static/media/react.3c16d41c.svg": "/my-app/static/media/react.3c16d41c.svg",
@@ -40,6 +41,6 @@
     "static/js/runtime-main.33dc232e.js",
     "static/js/2.64cb8efa.chunk.js",
     "static/css/main.6776b97b.chunk.css",
-    "static/js/main.3316cbda.chunk.js"
+    "static/js/main.f3bd952e.chunk.js"
   ]
 }
